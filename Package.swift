@@ -27,5 +27,8 @@ let package = Package(
             dependencies: [],
             publicHeadersPath: "include"
         )
+    ],
+    csettings: [
+        .define("GCC_PREPROCESSOR_DEFINITIONS", to: "$(inherited) GPB_USE_PROTOBUF_FRAMEWORK_IMPORTS=1")
     ]
 )
