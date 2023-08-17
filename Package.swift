@@ -25,10 +25,10 @@ let package = Package(
             dependencies: [],
             publicHeadersPath: "include",
             cSettings: [
-                .define("GCC_PREPROCESSOR_DEFINITIONS", to: "$(inherited) GPB_USE_PROTOBUF_FRAMEWORK_IMPORTS=1")
+                .define("GPB_USE_PROTOBUF_FRAMEWORK_IMPORTS")
             ],
             cxxSettings: [
-                .define("GCC_PREPROCESSOR_DEFINITIONS", to: "$(inherited) GPB_USE_PROTOBUF_FRAMEWORK_IMPORTS=1")
+                .define("GPB_USE_PROTOBUF_FRAMEWORK_IMPORTS")
             ]
         )
     ]
