@@ -25,10 +25,12 @@ let package = Package(
             dependencies: [],
             publicHeadersPath: "include",
             cSettings: [
-                .define("GPB_USE_PROTOBUF_FRAMEWORK_IMPORTS")
+                .define("GPB_USE_PROTOBUF_FRAMEWORK_IMPORTS"),
+                .unsafeFlags(["-fno-objc-arc"])
             ],
             cxxSettings: [
-                .define("GPB_USE_PROTOBUF_FRAMEWORK_IMPORTS")
+                .define("GPB_USE_PROTOBUF_FRAMEWORK_IMPORTS"),
+                .unsafeFlags(["-fno-objc-arc"])
             ]
         )
     ]
